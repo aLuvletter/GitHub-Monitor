@@ -1,1 +1,4 @@
+N_m3u8DL-CLI[2022-05-26] https://github.com/nilaoda/N_m3u8DL-CLI/releases
+ShareX[2022-07-02] https://github.com/ShareX/ShareX/releases
 Imagine[2021-05-08] https://github.com/meowtec/Imagine/releases
+FFmpeg-Builds[2022-07-02] https://github.com/BtbN/FFmpeg-Builds/releases
