@@ -1,0 +1,4 @@
+https://github.com/meowtec/Imagine/releases
+https://github.com/BtbN/FFmpeg-Builds/releases
+https://github.com/nilaoda/N_m3u8DL-CLI/releases
+https://github.com/ShareX/ShareX/releases
