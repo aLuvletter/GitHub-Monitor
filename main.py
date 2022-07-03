@@ -31,9 +31,9 @@ def get_page(url):
 
 def check():
     new_text = []
+    update_text = ''
     with open('url.txt', 'r', encoding='utf-8') as f:
-        with open('url.txt', 'r', encoding='utf-8') as f:
-            urls = f.read().split('\n')
+        urls = f.read().split('\n')
         f.close()
         spool = 24
         # 监测更新
@@ -48,7 +48,6 @@ def check():
             title = re.findall('(.*?)\[', item)[0]
             with open('update_info.txt', 'r', encoding='utf-8') as f:
                 text = f.read()
-                update_text = ''
                 if title in text:
                     new_time = int(re.findall('\[(.*?)]', item)[0].replace('-', ''))
                     time = int(re.findall('%s\[(.*?)]' % title, text)[0].replace('-', ''))
@@ -81,8 +80,7 @@ def send(update_text):
             'text': 'GitHub 监控',
             'desp': update_text,
         }
-        token = '自行申请TOKEN令牌'
-
+        token = '自行申请Token'
         requests.post(token, params=params)
 if __name__ == '__main__':
     info = []
