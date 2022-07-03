@@ -4,7 +4,6 @@
 
 import re
 import requests
-import os
 import datetime
 from concurrent.futures import ThreadPoolExecutor
 
@@ -82,7 +81,7 @@ def send(update_text):
             'text': 'GitHub 监控',
             'desp': update_text,
         }
-        token = 'http://iyuu.cn/IYUU4479Td53ed283c8ee4ec7783c08893523c722179d9067.send'
+        token = '自行申请TOKEN令牌'
 
         requests.post(token, params=params)
 if __name__ == '__main__':
